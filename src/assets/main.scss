@@ -1,0 +1,262 @@
+@import './normalize.scss';
+
+/* Variables */
+@import './style-variables.scss';
+
+/* Fonts */
+@import './fonts.scss';
+
+/* General Page */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $white;
+    color: $darkest-gray;
+    font-family: Verlag-Book;
+    font-size: 1.125rem;
+    line-height: 1.5em;
+}
+
+/* App Header */
+#header-app {
+    padding: 3rem;
+    text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+    #header-app {
+        text-align: left;
+    }
+}
+
+/* App Nav */
+#nav-app {
+    padding: 0 2rem 0 3rem;
+    font-family: Verlag-Book;
+    font-size: 1em;
+    display: none;
+}
+
+#nav-app ul {
+    list-style-type: none;
+    padding: 0;
+    display: block;
+}
+
+#nav-app ul li {
+    list-style-type: none;
+    padding: 0;
+    display: list-item;
+}
+
+#nav-app a {
+    color: $blue;
+    text-transform: none;
+}
+
+/* App - Two-columns for larger screens with border line */
+#nav-main-grid {
+    display: grid;
+    grid-template-areas:
+        "nav"
+        "main"
+}
+
+@media only screen and (min-width: 768px) {
+    #nav-main-grid {
+        grid-template-columns: 1fr 5fr;
+        grid-template-areas: "nav main";
+    }
+    #nav-app {
+        border-right: 1px solid $medium-gray;
+        display: block;
+    }
+    #nav-app li {
+        margin: 15px 0px;
+    }
+  }
+
+/* Horizontal nav for smaller screens */
+@media only screen and (max-width: 768px) {
+    #nav-app ul {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    #nav-app li {
+        margin: 5px 10px;
+    }
+}
+
+/* Columns and such */
+
+// should go away if making components for grid containers
+@media only screen and (min-width: 768px) {
+    .col2-33-66 {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-gap: 1.3rem;
+        // align-items: end;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .col2-50-50 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1.3rem;
+        // align-items: end;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .col2-66-33 {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-gap: 1.3rem;
+        // align-items: end;
+    }
+}
+
+/* Links */
+a {
+    color: $blue;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover, a:focus {
+    text-decoration: underline;
+}
+
+.router-link-active {
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Typography */
+h1 {
+    text-transform: uppercase;
+    margin: 0 0 1.6em 0;
+    font-family: Verlag-Black;
+}
+
+h1::before {
+    content: "";
+    display: block;
+    width: 1em;
+    height: 5px;
+    margin-bottom: 16px;
+    background: $badger-red;
+}
+
+h2 {
+    font-size: 1.6rem;
+    font-family: Verlag-Black;
+    text-transform: uppercase;
+    margin: 1.3em 0;
+}
+
+h2::before {
+    content: "";
+    display: block;
+    width: 1em;
+    height: 4px;
+    margin-bottom: 8px;
+    background: $badger-red;
+}
+
+h3 {
+    font-size: 1.6rem;
+    font-family: Verlag-Bold;
+    color: $badger-red;
+    margin: 1.5em 0 .9em 0;
+}
+
+h4 {
+    font-size: 1.3rem;
+    font-family: Verlag-Bold;
+    margin: 1.3em 0;
+}
+
+h5 {
+    font-size: 1.2rem;
+    font-family: Verlag-Bold;
+    margin: 1.3em 0;
+}
+
+p {
+    line-height: 1.6;
+}
+
+small {
+    font-size: 0.8em;
+    color: $medium-gray;
+}
+
+code {
+    font-size: 1em;
+}
+
+blockquote {
+    font-size: 1.6rem;
+    margin: 0 0 0px 0;
+    line-height: 1.4;
+    // border-bottom: 2px solid $badger-red; //over it
+    padding-bottom: 5%;
+}
+
+@media only screen and (max-width: 1200px) {
+    blockquote {
+        font-size: 1.125rem;
+    }
+}
+
+blockquote::before {
+    content: '"';
+    display: block;
+    font-family: Perpetua Titling MT, Engraver MT, Elephant;
+    font-size: 7rem;
+    margin-bottom: -60px;
+    color: $badger-red;
+}
+
+.lowercase-text {
+    text-transform: lowercase;
+}
+
+.text-above {
+    font-size: .8rem;
+    text-transform: uppercase;
+    line-height: 1rem;
+}
+
+/* Images */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.img-block-100 {
+    display: block;
+    width: 100%;
+}
+
+.img-center {
+    display: block;
+    margin: auto;
+}
+
+.d-block {
+    display: block;
+}
+
+
+
+/* Line breaks */
+hr {
+    color: $medium-gray;
+    margin: 2.5em 0;
+}
