@@ -11,8 +11,8 @@
     </transition>
 
     <div class="slideshow-controls">
-      <button @click="slideNext" class="next-slide">Next Slide</button>
-      <button @click="slidePrevious" class="previous-slide">Previous Slide</button>
+      <button @click="slideNext" class="next-slide arrow-control">></button>
+      <button @click="slidePrevious" class="previous-slide arrow-control"><</button>
     </div>
   </div>
 </template>
@@ -67,6 +67,7 @@ export default {
 
 .slideshow-container {
   position: relative;
+  background: #000;
 
   .slide {
     background: #000;
@@ -78,38 +79,65 @@ export default {
     }
   }
 
+  .arrow-control {
+    padding: 0.1rem .4rem .5rem .4rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    cursor: pointer;
+    color: $white;
+    font-size: 2.5rem;
+  }
+
+  /* is this terrible for accessibility? the outline wasn't so visually appealing on the slideshow */
+  .arrow-control:focus {
+    outline: none;
+  }
+
   .next-slide {
     position: absolute;
-    top: 50%;
-    right: 10%;
+    top: 46%;
+    right: 0%;
     z-index: 2;
   }
 
   .previous-slide {
     position: absolute;
-    top: 50%;
-    left: 10%;
+    top: 46%;
+    left: 0%;
     z-index: 2;
   }
 }
 
 .slideshow-anim-enter-active {
-  transition: all 0.5s ease;
-  transition-delay: 0.5s;
+  transition: all 0.3s ease;
 }
-.slideshow-anim-leave-active {
-  transition: all 0.5s cubic-bezier(1, 0.5, 0.8, 1);
-}
+
 .slideshow-anim-enter
 /* .slide-fade-leave-active below version 2.1.8 */ {
-  transform: translateX(100px) rotate(10deg) scale(0.9);
-  transform-origin: center bottom;
+  transform: scale(0.9);
+  transform-origin: right;
   opacity: 0;
 }
 
-.slideshow-anim-leave-to {
-  transform: translateX(-100px) rotate(-10deg) scale(0.9);
-  transform-origin: center bottom;
-  opacity: 0;
-}
+
+/* transition styles from lobby display */
+// .slideshow-anim-enter-active {
+//   transition: all 0.5s ease;
+//   transition-delay: 0.5s;
+// }
+// .slideshow-anim-leave-active {
+//   transition: all 0.5s cubic-bezier(1, 0.5, 0.8, 1);
+// }
+// .slideshow-anim-enter
+// /* .slide-fade-leave-active below version 2.1.8 */ {
+//   transform: translateX(100px) rotate(10deg) scale(0.9);
+//   transform-origin: center bottom;
+//   opacity: 0;
+// }
+
+// .slideshow-anim-leave-to {
+//   transform: translateX(-100px) rotate(-10deg) scale(0.9);
+//   transform-origin: center bottom;
+//   opacity: 0;
+// }
 </style>

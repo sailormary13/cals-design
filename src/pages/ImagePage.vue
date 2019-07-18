@@ -5,9 +5,9 @@
             <p>Two priorities for images are responsiveness and accessibility. Images must look good across screen sizes, and people using screen readers must be able to get information from the image. To make images accessible, always add alt text to image with the<code> alt=""</code> attribute. Alt text should describe in a short sentence what is seen in the image.
 
             <h3>Base Image</h3>
-            <p>The base img element is set up to apply the following styles.</p>
+            <p>The base img element is set up with the following styles to encourage responsive behavior.</p>
             <code>max-width: 100%; height: auto;</code>
-            <p>Make your screen size smaller your screen to see the image's responsive behavior.</p>
+            <p>Make your screen size smaller to see the image's responsive behavior.</p>
             <img src="../assets/images/sky-water.jpg" alt="lake and sky with light coming through clouds">
 
             <h3>Centered Image</h3>
@@ -45,7 +45,7 @@
             </BaseImageGallery>
 
             <h3>On-Page Slideshow</h3>
-            <p>This slideshow is placed on the page. It's big disadvantage for users is that there is no preview of all the images in the slideshow. Because of this, the user might not engage with the slideshow at all. Thus the <em>Image Gallery with Lightbox Slideshow</em> component is preferable in many cases.</p>
+            <p>As indicated in the name, this component lives on the page. A significant disadvantage of this component is that only one image is displayed at a time, and there is no preview of all the images. As a result, the user might not engage with the slideshow at all and could miss out on content. Ultimately, the accessibility of a slideshow component is questionable. Thus the <em>Image Gallery with Lightbox Slideshow</em> component may be preferable in many cases.</p>
             <BaseSlideshow>
             </BaseSlideshow>
 
