@@ -88,7 +88,7 @@
 
     @media only screen and (min-width: 992px) {
         section:first-child {
-            padding-top: 2.6rem;
+            padding-top: 1.4rem;
         }
     }
 

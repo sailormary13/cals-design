@@ -15,35 +15,59 @@
           </p>
 
           <h3>Styles</h3>
-          <ul> 
-            <li>
+          <table id="typography-display-table"> 
+            <tr><td>
               <h1>Heading 1</h1>
-            </li>
-            <li>
+            </td></tr>
+            <tr><td>
               <h2>Heading 2</h2>
-            </li>
-            <li>
+            </td></tr>
+            <tr><td>
               <h3>Heading 3</h3>
-            </li>
-            <li>
+            </td></tr>
+            <tr><td>
               <h4>Heading 4</h4>
-            </li>
-            <li>
+            </td></tr>
+            <tr><td>
               <h5>Heading 5</h5>
-            </li>
-            <li>
+            </td></tr>
+            <tr><td>
               <p>Paragraph</p>
-            </li>
-            <li>
+            </td></tr>
+            <tr><td>
               <small>Small</small>
-            </li>
-            <li>
+            </td></tr>
+            <tr><td>
               <code>Code</code>
-            </li>
-            <li>
+            </td></tr>
+            <tr><td>
               <blockquote>Blockquote.</blockquote>
-            </li>
-          </ul>
+            </td></tr>
+            <tr>
+              <td>
+                <ul>
+                  <li>
+                    Unordered
+                  </li>
+                  <li>
+                    List
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <ol>
+                  <li>
+                    Ordered
+                  </li>
+                  <li>
+                    List
+                  </li>
+                </ol>
+              </td>
+            </tr>
+          </table>
         </div>
       </section>
     </div>
@@ -69,19 +93,18 @@
         font-family: Verlag-Black;
     }
 
-    ul {
-    list-style-type: none;
-    padding: 0;
-
+    #typography-display-table { 
+    border-collapse: collapse;
+    width: 100%;
     }
 
-    ul li {
-    padding: 8px 16px;
-    border-bottom: 1px solid $medium-gray;
+    #typography-display-table td {
+      border-bottom: 1px solid $medium-gray;
     }
 
-    li:first-child {
-        border-top: 1px solid $medium-gray;
+    #typography-display-table td:first-child {
+      border-top: 1px solid $medium-gray;
+      padding-top: 5px;
     }
 
 

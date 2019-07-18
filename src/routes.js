@@ -12,6 +12,7 @@ import Layout from './pages/LayoutPage.vue';
 import Header from './pages/HeaderPage.vue';
 import Images from './pages/ImagePage.vue';
 import EventsFeed from './pages/EventsFeedPage.vue';
+import Forms from './pages/FormPage.vue';
 
 export default [
   {
@@ -73,6 +74,10 @@ export default [
   , {
     path: '/eventsfeed',
     component: EventsFeed
+  }
+  , {
+    path: '/forms',
+    component: Forms
   }
 
 ];

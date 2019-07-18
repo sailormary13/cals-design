@@ -19,43 +19,6 @@ body {
     line-height: 1.5em;
 }
 
-/* App Header */
-#header-app {
-    padding: 3rem;
-    text-align: center;
-}
-
-@media only screen and (min-width: 768px) {
-    #header-app {
-        text-align: left;
-    }
-}
-
-/* App Nav */
-#nav-app {
-    padding: 0 2rem 0 3rem;
-    font-family: Verlag-Book;
-    font-size: 1em;
-    display: none;
-}
-
-#nav-app ul {
-    list-style-type: none;
-    padding: 0;
-    display: block;
-}
-
-#nav-app ul li {
-    list-style-type: none;
-    padding: 0;
-    display: list-item;
-}
-
-#nav-app a {
-    color: $blue;
-    text-transform: none;
-}
-
 /* App - Two-columns for larger screens with border line */
 #nav-main-grid {
     display: grid;
@@ -69,29 +32,11 @@ body {
         grid-template-columns: 1fr 5fr;
         grid-template-areas: "nav main";
     }
-    #nav-app {
-        border-right: 1px solid $medium-gray;
-        display: block;
-    }
-    #nav-app li {
-        margin: 15px 0px;
-    }
   }
 
-/* Horizontal nav for smaller screens */
-@media only screen and (max-width: 768px) {
-    #nav-app ul {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-    }
-    #nav-app li {
-        margin: 5px 10px;
-    }
-}
+
 
 /* Columns and such */
-
 // should go away if making components for grid containers
 @media only screen and (min-width: 768px) {
     .col2-33-66 {
@@ -172,7 +117,7 @@ h3 {
     font-size: 1.6rem;
     font-family: Verlag-Bold;
     color: $badger-red;
-    margin: 1.5em 0 .9em 0;
+    margin: 2em 0 .8em 0;
 }
 
 h4 {
