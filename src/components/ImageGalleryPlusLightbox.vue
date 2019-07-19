@@ -2,7 +2,7 @@
     <div>
         <BaseImageGallery>
             <a v-on:click="displayLightbox()">
-            <img src="../assets/images/ag-hall-purp-flowers.jpg" alt="purple flowers with brick university building in background">
+            <img src="../assets/images/sky-water.jpg" alt="lake and sky with light coming through clouds">
             </a>
             <a v-on:click="displayLightbox()">
             <img src="../assets/images/students-on-pier.jpg" alt="students sitting on a pier on a chilly day">

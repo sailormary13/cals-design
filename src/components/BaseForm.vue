@@ -30,10 +30,14 @@
                     <input id="zip-form-input" type="text">
                 </div>
             </div>
-            <label>Event Date</label>
-            <input type="date">
-            <label>Event Time</label>
-            <input type="time">
+                <div class="label-input-form-wrapper">
+                    <label>Event Date</label>
+                    <input type="date">
+                </div>
+                <div class="label-input-form-wrapper">
+                    <label>Event Time</label>
+                    <input type="time">
+                </div>
             <label>Radio</label>
             <input type="radio">
             <input type="radio">
@@ -98,10 +102,15 @@ export default {
         flex-grow: 1;
     }
 
-    @media only screen and (min-width: 768px) {
+    .label-input-form-wrapper:last-child {
+        margin-right: 0;
+        }
+
+    @media only screen and (min-width: 390px) {
         .label-input-form-wrapper {
         margin-right: 16px;
         }
+
         .label-input-form-wrapper:last-child {
         margin-right: 0;
         }

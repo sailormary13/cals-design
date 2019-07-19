@@ -19,7 +19,7 @@
 
 
 <script>
-import img1 from "../assets/images/ag-hall-purp-flowers.jpg";
+import img1 from "../assets/images/sky-water.jpg";
 import img2 from "../assets/images/students-on-pier.jpg";
 import img3 from "../assets/images/protein-conjugates.jpg";
 import img4 from "../assets/images/tomato.jpg";
@@ -29,7 +29,7 @@ import img6 from "../assets/images/mossy-logs.jpg";
 export default {
   name: "BaseSlideshow"
   , props: {
-    
+
   }
   , data() {
     return {

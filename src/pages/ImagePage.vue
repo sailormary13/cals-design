@@ -25,7 +25,7 @@
             <h3>Image Gallery</h3>
             <p>This is a simple image gallery for displaying several photos on a page. The gallery is responsive, and the number of images in a row adjusts at small and medium breakpoints. It works with both horizontal and vertical photographs, although some cropping occurs to ensure consistent sizing.</p>
             <BaseImageGallery>
-              <img src="../assets/images/ag-hall-purp-flowers.jpg" alt="purple flowers with brick university building in background">
+              <img src="../assets/images/sky-water.jpg" alt="lake and sky with light coming through clouds">
               <img src="../assets/images/students-on-pier.jpg" alt="students sitting on a pier on a chilly day">
               <img src="../assets/images/protein-conjugates.jpg" alt="3 vials of liquid">
               <img src="../assets/images/tomato.jpg" alt="a tomato on the plant">
