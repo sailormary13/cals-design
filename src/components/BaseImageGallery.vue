@@ -46,4 +46,6 @@ export default {
             grid-gap: 1.6rem;
         }
     }
+
+
 </style>

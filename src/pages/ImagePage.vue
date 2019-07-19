@@ -35,14 +35,7 @@
 
             <h3>Image Gallery with Lightbox Slideshow</h3>
             <p>On the page, users see the normal image gallery component, but if they click one of the images, the modal "lightbox" appears with all the images in a slideshow.</p>
-            <BaseImageGallery>
-              <img src="../assets/images/ag-hall-purp-flowers.jpg" alt="purple flowers with brick university building in background">
-              <img src="../assets/images/students-on-pier.jpg" alt="students sitting on a pier on a chilly day">
-              <img src="../assets/images/protein-conjugates.jpg" alt="3 vials of liquid">
-              <img src="../assets/images/tomato.jpg" alt="a tomato on the plant">
-              <img src="../assets/images/spooner-research-station.jpg" alt="agricultural buildings and field">
-              <img src="../assets/images/mossy-logs.jpg" alt="a tomato on the plant">
-            </BaseImageGallery>
+            <ImageGalleryPlusLightbox></ImageGalleryPlusLightbox>
 
             <h3>On-Page Slideshow</h3>
             <p>As indicated in the name, this component lives on the page. A significant disadvantage of this component is that only one image is displayed at a time, and there is no preview of all the images. As a result, the user might not engage with the slideshow at all and could miss out on content. Ultimately, the accessibility of a slideshow component is questionable. Thus the <em>Image Gallery with Lightbox Slideshow</em> component may be preferable in many cases.</p>
@@ -69,13 +62,15 @@
 
 import BaseImageGallery from '../components/BaseImageGallery.vue'
 import BaseSlideshow from '../components/BaseSlideshow.vue'
+import ImageGalleryPlusLightbox from '../components/ImageGalleryPlusLightbox.vue'
 
 export default {
   name: 'ImagePage',
   components: {
     BaseImageGallery
     , BaseSlideshow
-  }
+    , ImageGalleryPlusLightbox
+  } 
 }
 
 </script>

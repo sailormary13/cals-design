@@ -4,7 +4,7 @@
       <div v-for="slide in slides" class="slide" :key="slide.id" v-if="slide.id === slideNum">
         <img
           v-bind:src="slide.src"
-          alt="lake and sky with light coming through clouds"
+          alt=""
           class="d-block"
         />
       </div>
@@ -19,20 +19,27 @@
 
 
 <script>
-import img1 from "../assets/images/sky-water.jpg";
-import img2 from "../assets/images/tomato.jpg";
-import img3 from "../assets/images/cranberries.jpg";
-import img4 from "../assets/images/students-on-pier.jpg";
+import img1 from "../assets/images/ag-hall-purp-flowers.jpg";
+import img2 from "../assets/images/students-on-pier.jpg";
+import img3 from "../assets/images/protein-conjugates.jpg";
+import img4 from "../assets/images/tomato.jpg";
+import img5 from "../assets/images/spooner-research-station.jpg";
+import img6 from "../assets/images/mossy-logs.jpg";
 
 export default {
-  name: "BaseSlideshow",
-  data() {
+  name: "BaseSlideshow"
+  , props: {
+    
+  }
+  , data() {
     return {
       slides: [
         { id: 1, src: img1 },
         { id: 2, src: img2 },
         { id: 3, src: img3 },
-        { id: 4, src: img4 }
+        { id: 4, src: img4 },
+        { id: 5, src: img5 },
+        { id: 6, src: img6 }
       ],
       slideNum: 1
     };
@@ -86,11 +93,6 @@ export default {
     cursor: pointer;
     color: $white;
     font-size: 2.5rem;
-  }
-
-  /* is this terrible for accessibility? the outline wasn't so visually appealing on the slideshow */
-  .arrow-control:focus {
-    outline: none;
   }
 
   .next-slide {

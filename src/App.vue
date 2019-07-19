@@ -219,7 +219,7 @@
   width: 100%;
   height: 100%;
   z-index: 1;
-  background-color: rgba(0,0,0,0.6);
+  background-color: rgba(0,0,0,0.8);
 }
 
 @media only screen and (min-width: 768px) {
