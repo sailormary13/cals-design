@@ -60,18 +60,12 @@
 
 
 <script>
-import BaseColThirds from '../components/BaseColThirds.vue'
 import BaseColorBlockThirds from '../components/BaseColorBlockThirds.vue'
-import BaseCard from '../components/BaseCard.vue'
-import BaseButton from '../components/BaseButton.vue'
 
 export default {
   name: 'ColorBlockPage',
   components: {
-    BaseColThirds
-    , BaseCard
-    , BaseButton
-    , BaseColorBlockThirds
+    BaseColorBlockThirds
   }
 }
 </script>

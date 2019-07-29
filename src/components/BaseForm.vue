@@ -38,20 +38,33 @@
                     <label>Event Time</label>
                     <input type="time">
                 </div>
-            <label>Radio</label>
-            <input type="radio">
-            <input type="radio">
-            <input type="radio">
-            <label>Checkbox</label>
-            <input type="checkbox">
-            <input type="checkbox">
-            <input type="checkbox">
+
+            <label>Participant Type</label>
+            <div class="radio-button-container">
+                <input type="radio" name="radio" value="radio1">First-Time Participant
+            </div>
+            <div class="radio-button-container">
+                <input type="radio" name="radio" value="radio2">I've Attended Before
+            </div>
+
             <label>Select Housing</label>
             <select name="select">
                 <option>Main Lodge</option>
                 <option>Log Cabin A</option>
                 <option>Log Cabin B</option>
             </select>
+
+            <label>Activities</label>
+            <div class="checkbox-container">
+                <input type="checkbox" name="Activities" value="natureHike">Nature Hike
+            </div>
+            <div class="checkbox-container">
+                <input type="checkbox" name="Activities" value="pondChemistry">Pond Chemistry
+            </div>
+            <div class="checkbox-container">
+                <input type="checkbox" name="Activities" value="birdWatching">Bird Watching
+            </div>
+
             <BaseButton>Submit</BaseButton>
         </form>
     </div>
@@ -82,11 +95,13 @@ export default {
 
     input[type=radio], input[type=checkbox] {
         display: inline;
+        margin-right: 0.5rem;
     }
 
     label {
         margin-top: 12px;
         display: block;
+        font-weight: bold;
     }
 
     input[type=text], input[type=email] {
@@ -118,6 +133,10 @@ export default {
 
     select {
         display: block;
+    }
+
+    .radio-button-container, .checkbox-container {
+        margin: 0.4rem 0;
     }
 
 </style>

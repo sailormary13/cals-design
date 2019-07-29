@@ -8,12 +8,10 @@
 
 
 <script>
-import BaseNewsArticle from '../components/BaseNewsArticle.vue'
 
 export default {
   name: 'BaseNewsFeed',
   components: {
-      BaseNewsArticle
       }
 }
 </script>
