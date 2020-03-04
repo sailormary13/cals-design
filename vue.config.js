@@ -1,3 +1,3 @@
-module.exports = {
-publicPath: ‘/cals-design/’
-}
+// module.exports = {
+// publicPath: ‘/cals-design/’
+// }
