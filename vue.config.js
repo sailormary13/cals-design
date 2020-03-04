@@ -1,3 +1,5 @@
-// module.exports = {
-// publicPath: ‘/cals-design/’
-// }
+module.exports = {
+  publicPath: process.env.NODE_ENV === 'production'
+    ? '/cals-design/'
+    : '/'
+}
